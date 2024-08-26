@@ -1,0 +1,489 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="rpaChallenge" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1016,5177" sap2010:WorkflowViewState.IdRef="rpaChallenge_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Semantic.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OmniPage.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.ML.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="rpaChallenge" sap:VirtualizedContainerService.HintSize="733,5116" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="si:FileInfo" Name="downloadedFile" />
+      <Variable x:TypeArguments="upr:ILocalResource" Name="fileresource">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">GetLastDownloadedFile_1</x:String>
+            <x:String x:Key="SourcePropertyName">FileResource</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:GetLastDownloadedFile FileResource="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="C:\Users\Faraan\Downloads" File="[downloadedFile]" sap:VirtualizedContainerService.HintSize="671,1159" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1" IgnoreFiles="tmp,dwm">
+      <ui:GetLastDownloadedFile.Body>
+        <ActivityAction>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,867" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Rpa Challenge - Vivaldi" sap:VirtualizedContainerService.HintSize="450,779" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="e47317ea-a205-4a51-97a6-7166a580b53e" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,463" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button 'DOWNLOAD EXCEL''" sap:VirtualizedContainerService.HintSize="354,190" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e47317ea-a205-4a51-97a6-7166a580b53e" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CVScreenId="948c69c2-2eeb-4ea1-953c-d67defa8b311" ContentHash="sVIwiV21SUi99T_mrZ60lw" CvElementArea="15, 755, 459, 39" CvTextArea="158, 766, 141, 14" CvTextArgument="DOWNLOAD EXCEL" CvType="Button" DesignTimeRectangle="15, 755, 459, 39" DesignTimeScaleFactor="1" ElementType="Button" Guid="8805420a-ee3b-4387-acde-fa457b34f0c2" InformativeScreenshot="04b709bca1e7eac295004832e8b453cf.png" Reference="BiLd4UAupkWA8x_YrQx9vQ/DM1yJxJTEk2cs4hRs-95sg" ScopeSelectorArgument="&lt;wnd app='vivaldi.exe' cls='Chrome_WidgetWin_1' title='Rpa Challenge - Vivaldi' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Enregistrer''" sap:VirtualizedContainerService.HintSize="354,183" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e47317ea-a205-4a51-97a6-7166a580b53e" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CVScreenId="a972afe1-46a8-4c3d-9df3-e25ba393a73c" ContentHash="yzag7OELW0iTj_km1HwfWw" CvElementArea="757, 251, 105, 33" CvTextArea="779, 262, 63, 14" CvTextArgument="Enregistrer" CvType="Button" DesignTimeRectangle="757, 251, 105, 33" DesignTimeScaleFactor="1" ElementType="Button" Guid="329ff2ba-be25-471c-a563-59094c530fef" InformativeScreenshot="7b7effdc1800a4e03425da2d150e6d73.png" Reference="BiLd4UAupkWA8x_YrQx9vQ/IIYEZpFiT0GPp57utxKUdg" ScopeSelectorArgument="&lt;wnd app='vivaldi.exe' cls='Chrome_WidgetWin_1' title='Vivaldi - Vivaldi' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-8, -8, 1936, 1096" ContentHash="wA763uXAWU6voea1oCZW4g" FilePath="C:\Users\Faraan\AppData\Local\Vivaldi\Application\vivaldi.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM9SURBVFhHtVfJThtBFOQT/C8xGI5wh3vggnJhOSGBOCP+InCxxAHu8AEWVyCEJITgJWaJMcR4ZQ+JOlXjaaun5/V42EoqYWa6u6pfV/fM9CilAqwPDCTAcTANZkD1QnIMjsUxE7Ze4B80mAEboDTQa5Bjz5iapjhdSp3egumAAVzgzKWGb0mvEnrNY5W9Mj+v6hsb6uHsDH2D4LUG7l1OT4t9BVIzQQMMh9SgwyqEJVEXbrPZuEbGu649Z/VcNNbWxDENpmnAvdVeIK7Rwhji2G1maEC68SriGvXlZVkDFA0wbK+NqiMTogEzcDeHWXUwMaFKS0v+lWgwgMW5OY93+K1xs7MT0iFDBmqLi36XNnIYaCuZVFvvkmr//ah/1Q0K76H9F/AYv01UpqYCWmTIQCuT8Zu3kZttG9gGd8DL9XX/jowjiFJcMlBbXVVVSy9k4O/Vld+8jRZKt43ZU5zcGxwMtTFRgchXtPsGXqOviXssyUlfX0AvZEBCATOh+CcY2QXPI/JAUYqfWLPXOMS9Sn+/bICnlwSGchcdP5MwwL+uk7GKCnzH/T+O+zRwZFQhlgHi/OOSJ6wDVsDOsPEPS5MbHlaViAple3tVDrzwqxBrCQiu+wEGpzjXmMyPjqo6QsktxpkfIh95tKERF/IQL4BFUDQQFTCKaXGu8z7IcmsegI2IXfKAEFL8p89yKhU2cGVtQxtFlF4S/gGeCMtiookqaXFW4BhZCBmoWweRDZbbFNbiDNette1s/Bob84QZQorLBkBXgjVKCwsB4WwS5cS1KNzBHIW1OM+DU5eBWpeHEQ3mEDiKk/mhIfXYxfT55GRHWIs7DZB8jkeBWSmOjKgCxK+75KaBx7E5a82SH0LxhYSnVVSiNaK2HHGNidjCBjdpwPlKxo5xTLjQwiuZINohKrBCA86XUj65eHKVcK53W2MT9wjcBdZcEjV5lkp9oIHI13I08o5OsgwjzIZk5rFc9sodR9hnE+MnYn2YcO/yBDNPMb2f7W0Vlyj/LLVjfZr9RiBNYfMweaqwzxWt2zHgm3B+nFLIFn6GeBP0Zq4ZMEBCzP489wwxkBR+4qwpuMm0M3AYx/o8Vz3/Adr+yF7zZZHfAAAAAElFTkSuQmCC" InformativeScreenshot="656524c2ef1b405d810ac2c8db2d57e7.png" Reference="BiLd4UAupkWA8x_YrQx9vQ/q32kEVDgJkSsQGLsnEzYIw" Selector="&lt;wnd app='vivaldi.exe' cls='Chrome_WidgetWin_1' title='Rpa Challenge - Vivaldi' /&gt;" Title="Rpa Challenge - Vivaldi" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:GetLastDownloadedFile.Body>
+    </ui:GetLastDownloadedFile>
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="671,3869" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_3" InstanceCachePeriod="3000" WorkbookPath="[downloadedFile.FullName]">
+      <ui:ExcelApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="637,3736" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="tableData" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ExcelReadRange AddHeaders="True" DataTable="[tableData]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="575,92" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Sheet1">
+              <ui:ExcelReadRange.Range>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </ui:ExcelReadRange.Range>
+            </ui:ExcelReadRange>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Rpa Challenge - Vivaldi" sap:VirtualizedContainerService.HintSize="575,598" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="526968cd-66bc-4a21-a3e3-e47362128be8" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,273" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'START'" sap:VirtualizedContainerService.HintSize="354,183" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="526968cd-66bc-4a21-a3e3-e47362128be8" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CVScreenId="7bf30cfa-77b1-42a1-980b-2b0bf7ac6a6c" CvElementArea="15, 736, 460, 58" CvTextArea="221, 757, 49, 14" CvTextArgument="START" CvType="Button" DesignTimeRectangle="15, 736, 460, 58" DesignTimeScaleFactor="1" ElementType="Button" Guid="e9654c9b-1d1e-47bd-b0de-5a2b9d9dd70b" InformativeScreenshot="b26d6a7aaa97dbf36e4d2a8a517884bc.png" ScopeSelectorArgument="&lt;wnd app='vivaldi.exe' cls='Chrome_WidgetWin_1' title='Rpa Challenge - Vivaldi' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-8, -8, 1936, 1096" ContentHash="wA763uXAWU6voea1oCZW4g" FilePath="C:\Users\Faraan\AppData\Local\Vivaldi\Application\vivaldi.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM9SURBVFhHtVfJThtBFOQT/C8xGI5wh3vggnJhOSGBOCP+InCxxAHu8AEWVyCEJITgJWaJMcR4ZQ+JOlXjaaun5/V42EoqYWa6u6pfV/fM9CilAqwPDCTAcTANZkD1QnIMjsUxE7Ze4B80mAEboDTQa5Bjz5iapjhdSp3egumAAVzgzKWGb0mvEnrNY5W9Mj+v6hsb6uHsDH2D4LUG7l1OT4t9BVIzQQMMh9SgwyqEJVEXbrPZuEbGu649Z/VcNNbWxDENpmnAvdVeIK7Rwhji2G1maEC68SriGvXlZVkDFA0wbK+NqiMTogEzcDeHWXUwMaFKS0v+lWgwgMW5OY93+K1xs7MT0iFDBmqLi36XNnIYaCuZVFvvkmr//ah/1Q0K76H9F/AYv01UpqYCWmTIQCuT8Zu3kZttG9gGd8DL9XX/jowjiFJcMlBbXVVVSy9k4O/Vld+8jRZKt43ZU5zcGxwMtTFRgchXtPsGXqOviXssyUlfX0AvZEBCATOh+CcY2QXPI/JAUYqfWLPXOMS9Sn+/bICnlwSGchcdP5MwwL+uk7GKCnzH/T+O+zRwZFQhlgHi/OOSJ6wDVsDOsPEPS5MbHlaViAple3tVDrzwqxBrCQiu+wEGpzjXmMyPjqo6QsktxpkfIh95tKERF/IQL4BFUDQQFTCKaXGu8z7IcmsegI2IXfKAEFL8p89yKhU2cGVtQxtFlF4S/gGeCMtiookqaXFW4BhZCBmoWweRDZbbFNbiDNette1s/Bob84QZQorLBkBXgjVKCwsB4WwS5cS1KNzBHIW1OM+DU5eBWpeHEQ3mEDiKk/mhIfXYxfT55GRHWIs7DZB8jkeBWSmOjKgCxK+75KaBx7E5a82SH0LxhYSnVVSiNaK2HHGNidjCBjdpwPlKxo5xTLjQwiuZINohKrBCA86XUj65eHKVcK53W2MT9wjcBdZcEjV5lkp9oIHI13I08o5OsgwjzIZk5rFc9sodR9hnE+MnYn2YcO/yBDNPMb2f7W0Vlyj/LLVjfZr9RiBNYfMweaqwzxWt2zHgm3B+nFLIFn6GeBP0Zq4ZMEBCzP489wwxkBR+4qwpuMm0M3AYx/o8Vz3/Adr+yF7zZZHfAAAAAElFTkSuQmCC" InformativeScreenshot="656524c2ef1b405d810ac2c8db2d57e7.png" Reference="BiLd4UAupkWA8x_YrQx9vQ/q32kEVDgJkSsQGLsnEzYIw" Selector="&lt;wnd app='vivaldi.exe' cls='Chrome_WidgetWin_1' title='Rpa Challenge - Vivaldi' /&gt;" Title="Rpa Challenge - Vivaldi" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tableData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="575,4165" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="541,3999" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="rowFirstName" />
+                      <Variable x:TypeArguments="x:String" Name="rowLastName" />
+                      <Variable x:TypeArguments="x:String" Name="rowCompanyName" />
+                      <Variable x:TypeArguments="x:String" Name="rowRoleInCompany" />
+                      <Variable x:TypeArguments="x:String" Name="rowAddress" />
+                      <Variable x:TypeArguments="x:String" Name="rowEmail" />
+                      <Variable x:TypeArguments="x:String" Name="rowPhoneNumber" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,335" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                      <ui:MultipleAssign.AssignOperations>
+                        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[rowFirstName]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">[row("First Name").ToString()]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[rowLastName]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">[row("Last Name ").ToString()]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[rowCompanyName]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">[row("Company Name").ToString()]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[rowRoleInCompany]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">[row("Role in Company").ToString()]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[rowAddress]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">[row("Address").ToString()]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[rowEmail]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">[row("Email").ToString()]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[rowPhoneNumber]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">[row("Phone Number").ToString()]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                        </scg:List>
+                      </ui:MultipleAssign.AssignOperations>
+                    </ui:MultipleAssign>
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Rpa Challenge - Vivaldi" sap:VirtualizedContainerService.HintSize="479,3576" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="5e4a9a98-c5fe-4212-9578-0215b8b3a44f" Version="V2">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,3220" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'vivaldi.exe Rpa'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="354,251" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="5e4a9a98-c5fe-4212-9578-0215b8b3a44f" Text="[rowFirstName]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="591, 125, 32, 19" DesignTimeScaleFactor="1" Guid="47a57fc4-a2e0-4c10-aeaa-e075beb3d698" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAATCAYAAADxlA/3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFuSURBVEhL7ZPxS4NAFMf7//+IA0kSZhjCQtgojCQhNuYvGYNFgjC4NfbDCYLD8e2dO0nN0SRpBPvAHXdvj/nxvecFTsxZ4H8J5NtcnfqjRUAgfgkRVlcsgJUPg5l43qi0o8mRJimynbo2aBGYw2EG7PEIo3LNlhRPwd857V2R/2fC/1DXBgcEHNqbLBGMA9q/zvEmhDd2Ecqq7ASiibsX9gLwwlRg7tlUOQ2mI+NzitTpIFCNy7MO/dqCO3kDz4Donu639OBkjejRBDM80szAFy4synUm1MoFp0idI1pQvnVToFpWgekNgz0r30/OUYT1Vp6buXUOCAwRJAKiWCmNURmvCjSqtJpiaDCwSwuOH2KZqHiR28sM/CCgyFNe9F3X7xAVk/8nAmv4Aw3Oq/pGtiGG9ND9JytzDfir4pdv9FcBaoF9xaDpOjRNg/UkR1CSIXqgoWTUnoFPqnVaBH5JlqmZOY7+BTpyFjixAPAJYggrb0UxIlgAAAAASUVORK5CYII=" InformativeScreenshot="beb9a21808c1ec8bee41c2a9121027f2.png" ScopeSelectorArgument="&lt;wnd app='vivaldi.exe' cls='Chrome_WidgetWin_1' title='Rpa Challenge - Vivaldi' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.PointOffset>
+                                    <uix:PointOffset Position="BottomRight" X="-13" Y="30" />
+                                  </uix:TargetAnchorable.PointOffset>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="354,170" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="esc" KeyModifiers="None" SpecialKey="True">
+                              <ui:SendHotkey.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="f709783a-ba5d-4a3c-8e6e-1fe93e80a9b2">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:SendHotkey.Target>
+                            </ui:SendHotkey>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'vivaldi.exe Rpa'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="354,251" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="5e4a9a98-c5fe-4212-9578-0215b8b3a44f" Text="[rowLastName]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="1012, 125, 32, 21" DesignTimeScaleFactor="1" Guid="019daa84-4da4-47b9-b878-3b247d38e924" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAVCAYAAAAnzezqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGXSURBVEhL7ZRha8IwEIb3/39EWDFYsKDolIri6FhYQSwKYkeHg0CZTC2DRShUlHeXWmHVORQd++IDgd5daJ4m19zgn7kKXAX2BFToI/zMgrNZIV7ESNZZuINea08gaDLYQRacTQCbWXDnWbiDXutoASU9OO0WWm2BwUQh7LcgXtSmuFaQPYdqVBcDTGOdVAhEFSYzYNk6H1Amz9ECUdcC41WIUYjoPYCoWeCcwXKjtC7vOXiDFl5EkI801xSYIMF07KDMOOyeD388pUyeIwUkOgUT4i0LUyYQ5lZAwaswVPvb76PdGUlES/18iSOYu7CYTa/Ko+dtdwAzD3USYoUybNfHZLFJX0YgGaLO6hjm9i/B8O6bQMYqnqbnznkHMu38izQhLdZg4E0fKvudlHRoV7YCEdySAfs57Txg6ZOwhe6HDrSACXeWVvY4KMAK1FTFzXBeKRmHEBUD7NYAL9CoeXDt/BFUiwwG5zAMA+Un3YKaBPKBmpJkWckl1Tw/CvzKMjl4qaQkCV09p3GawB9wFbgK/LMA8AUJWSMWW6vV8wAAAABJRU5ErkJggg==" InformativeScreenshot="b6fae668cab4c2fb87bf647d79cc4055.png" ScopeSelectorArgument="&lt;wnd app='vivaldi.exe' cls='Chrome_WidgetWin_1' title='Rpa Challenge - Vivaldi' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.PointOffset>
+                                    <uix:PointOffset Position="BottomRight" X="-15" Y="28" />
+                                  </uix:TargetAnchorable.PointOffset>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="354,170" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="esc" KeyModifiers="None" SpecialKey="True">
+                              <ui:SendHotkey.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="f709783a-ba5d-4a3c-8e6e-1fe93e80a9b2">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:SendHotkey.Target>
+                            </ui:SendHotkey>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'vivaldi.exe Rpa'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="354,251" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="5e4a9a98-c5fe-4212-9578-0215b8b3a44f" Text="[rowCompanyName]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="1013, 303, 108, 18" DesignTimeScaleFactor="1" Guid="25a04911-a693-4ada-90f9-f96225d0c63a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGwAAAASCAYAAAC+Tjt8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAS6SURBVFhH7VcLa+JYFN7//yNCQ8OEqVMXpxkiEUugYcOWhrXjNoOl0jDSUKdaOykIKcq338nDxFcf7iwzdvuBaHLuPa/vnHOvv+ENW4U3wrYMb4RtGd4I2zKsJGzyvYfOmQ+fn+BbnL193Yh6jPU2e8jBPPgXffxKGZgnbBrBb2hQ3lVhOh48x0RNV6B99NCfZmteKTp1BYrWRFCOs2NC2XMxyB5/BcwRNnArUE0fUdlpktg6IGmHQfaCHTjswLUtWA0LttvB4CETIESr0ULv1ofTMGHWbbgXo0QyunBhHxgwGg784SR5J4jOHTjnI0SBB5v6LMpbYZRJU0yGok9k1Hc+wIh7rL/CVHjfgeN0EMr+OvXTphek+yfBMaw/g/kOuWnDPvKRelVACKvsVebiXCLsYQDfKcV9S9uMN/Ek86P/Vfxg7BLH9ZiCMfqnDkzGbtoegntZXKCI24JzNkCRmdUoERaguVuBe5M9rsOlDW1Hh3Xaw+A6gNfQ2ZEWuklWOjAVVup+E53rCH0mtqZpJMlAVYgcDtA7Mbi/Cu8u0ZYUifahiop5jOCa8jPZo6B2mqY0vrBSeycB+sMeC4LrNRVKvZPIceOissOC+uSl+k8t6DsampeU3XuoKoUtQbeponqySFdKmPklhKPrcK7ylyXC4i4s+qU3mHTxk3Yq7zSoismoiZV+VGDVa6gJkfd9dA4rc108OObzewut3gDRNQn/qEFrdB8dwQVhYjA3vhYRvN8VGJ+lcnKM0WYHVj2paiFsPkGRVyWhTlqFGXwzX58Spux78xXfbULdZWAr7cVof2JRlAnj2m5pKoRHTGTSKenaipv1yJT+7Rhor8hIQpiovHKg6/RX9JUIS+I4aDPaAvHfBpQyYQt+BIcsLO4pzPXhvlfTYgILoFS4CRL/+G6hC8soCEuq0YRfHodLEEKWuzBJepJAkS+QvuIckPV5Esu/C2TEc8w8bo+QRK3QP5ML+UIAf0qCtWY3fb+AGWFEeKRDP+KOku/JyFz0s1zkT/mRYWYn2atAZZdqpY/KLrVWu5igNBIHcPdUKlsuvzHb1b+U+cqRQaWzkZFBKlqTADckTF1M4l1aPDyZ1tp7NmGiQ2dVd0fw9uU7e72AMmGYZqPxqPC9iLEEdqO2KWFxG4ZioHUXIbovf8aIH2mauUsHLps8H2pws0NbEF95yTlkdtJhEDo61IPW7KIxCekoZ3XaBZsRpnAMuGF23MpNtc5KY6BSOmJP+eAizO0NWzB2F0biE4kanVTpM8/RrNNWYY4wgYxGOY9z3SGfJc7cT15AWgcceZsSlo/rP8LZRSM6M6Eu3lQXME8YMf7qwmBFKjsqNJUO6zXYX0onDBPatSXJlEvi1Arsi5zgDUei48PjgavupiNB/kbkBGE6QrtO0sQeLxvqHm+BYv8FhCXVTL2rLhs5lggjgkN2ckn36LNJ0jjGWMCqxH1ibz4SBeMeXMatqOxeiU034H3LZGuwRNjzMUH82HXmmSiTh4d4/TiYUjb7+/BCyIhdc9nYBHH81OX7hXhBbP+CsB+DOcL+IyRjfN3htWV4/YRNu/x/yQvEusNry/DTCUM8xvgHjar/A34+YW94AYB/ALEAGypv+W18AAAAAElFTkSuQmCC" InformativeScreenshot="cf96c14087faf082109bad20bb7b60b4.png" ScopeSelectorArgument="&lt;wnd app='vivaldi.exe' cls='Chrome_WidgetWin_1' title='Rpa Challenge - Vivaldi' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.PointOffset>
+                                    <uix:PointOffset Position="BottomRight" X="-53" Y="31" />
+                                  </uix:TargetAnchorable.PointOffset>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="354,170" sap2010:WorkflowViewState.IdRef="SendHotkey_4" Key="esc" KeyModifiers="None" SpecialKey="True">
+                              <ui:SendHotkey.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="f709783a-ba5d-4a3c-8e6e-1fe93e80a9b2">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:SendHotkey.Target>
+                            </ui:SendHotkey>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'vivaldi.exe Rpa'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="354,251" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="5e4a9a98-c5fe-4212-9578-0215b8b3a44f" Text="[rowRoleInCompany]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="589, 392, 119, 17" DesignTimeScaleFactor="1" Guid="ff672c21-3a4d-4d99-80ed-13c8f6ae5e0c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHcAAAARCAYAAADnlDPNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAS9SURBVGhD7VePa5taFH7//x8hkUpltcleFovF4kOoPKFEXtpuGY6GyWTSvtlms4+CJeF7596r5pqkiUkZG20+MFyv98c55zu/8gd2eLHYkfuCsSP3BeP3Inc6wWRajHd4NlaQmyH+MMSweKLrB+SNDT+Cu+/S7yaYYGgpUE4221VDfoOokDeMMzrxdWMFuSEsRUf3xIbNnp4Bdd/GKC8+rwTba9HvhriLEN0V440wQeJ3oLQMmK6PwHdhHqpQ3jgYPRRLXiHWkCsTlOOyp6ATZMU7xXYygFeQ750nyKrInts7zRD1XeEkJx6Gt8tjKvvkwfskzufjMOH7rJ4Jyw0Q3fNPC8hDC+qBh+SxmOCYIHZ1KG8DjIsZPKYIiXguBzlBKMmR/GNjEI8x9GxYxxZcf4Qx0+duBN81YfZIxw/pLBvch/C8EOP7CIG7zAYEuo+dx765foj0jvacDJDwjwkGNI5vhzQ3dz7Nue4lUr6uQB7hzAkQ13RcjQ3IBU+bxpkw1fi8C0XrEhk3SGMS8J0GpR0UAsl7U5wdKtC5IhluiLSupsG+WkwBqW/A8MUJbKy0NJj9GOltTIYgojQH0UJpyBC8VWCtSxPTiEpFKQel774Nnc4v5QiPqSS0OnBIn+yaSCB9tCMbZpuRnpKOAUyNOXfhKt98GPsGOocWzj5LNng3EM6Uj2DTev2EnPI6RXxu03oNamUXZiO6s+0gvC7tUp4fwdlT4UgVatzvQJUnGmANuSYG9xkyMm7IjdFB8J19Y5fr8L7yhQLTBJ5OAn1mLxK5VzYnvYoeBoo0FlGzHCAwT25dGTp/vzxfBrvLgP+teH0CWUBpu3cJOUs/XJiVHIzcTl+S8j5AR9HqOn6U5GbkKqU9CkxHghSScdl9+Xu6r0ZufX8uyZN45MzHpcem8A/I3iLkG6NRze2+UaD+6SMu0yJXrB7VDMxAgpwZuSICVWjktdWjUT1sUf3mu2aYJ7ccCzAFl0WocDT/3+L1CcxkkyDpwb7Xz17iNGz9gS+ykzyWwJ2ESte6+2QbVWBOX575nZyrZeKSJZbEgz4fIA3QLC3ziwyclYrmlzApqvnFFURNNi/Y5Gwv98YepSqWAeTnv/VpuRm5wqALhmSgBm1IdZtHwik51emc63/1yNmoVtNwK3L3qGGrlYkxgrY458n7mpLL7HkkssnIUetZpSEa19zklNJElWbExYYbVQ1ERilL26P1nDNpL3MEcgw/KVoRaq6GFkXyX5F4l7AtucL5dNhSwzP5EcKhjGP4N2KCef8elZmyiXpM4FMvUN6xFbktMv7fSXVnzQbsPllvaq4GPcpYjckljByobWq2tPlAaobmDRU1JA6lU+tjUUXIOAFrIFjKVakx0E0EpSJzex+++OhSM6NSI6WpKvSjADcLjdEzyGW4G8Jus3RP8uyRPKoBi5oxueZlVy4nROVlQSXnHFXOuRW51KEP+12uE7fBfleyAcXxhUUEC71Vkselzr9xWuZgfQzt37CRKrGC3IaY5sibtud5Pvsr8QsxITmeDZlo0mrVkXm+pda8Qdu8kSrxfHJfK2rk/hzw7nqLRqrEjtxt8dPJFc2Z+X77LLMjd1tQOXpY0vH/PgD+B6tfUyBMjtV0AAAAAElFTkSuQmCC" InformativeScreenshot="c618de92fb724e325b4be393e0069946.png" ScopeSelectorArgument="&lt;wnd app='vivaldi.exe' cls='Chrome_WidgetWin_1' title='Rpa Challenge - Vivaldi' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.PointOffset>
+                                    <uix:PointOffset Position="BottomLeft" X="54" Y="31" />
+                                  </uix:TargetAnchorable.PointOffset>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="354,170" sap2010:WorkflowViewState.IdRef="SendHotkey_5" Key="esc" KeyModifiers="None" SpecialKey="True">
+                              <ui:SendHotkey.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="f709783a-ba5d-4a3c-8e6e-1fe93e80a9b2">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:SendHotkey.Target>
+                            </ui:SendHotkey>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'vivaldi.exe Rpa'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="354,251" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="5e4a9a98-c5fe-4212-9578-0215b8b3a44f" Text="[rowAddress]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="1012, 213, 60, 23" DesignTimeScaleFactor="1" Guid="15b8c96e-efc1-45d9-b5c0-2a84f75e6060" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADwAAAAXCAYAAABXlyyHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALKSURBVFhH7ZXxa5tAFMf3//8RR6RHhbql2CYYElKEymQhMmlah6VhMpnMzi7FjICh5bt3emlNTLXsh8KyfEDIvcf5/L775t07/GfsBe86e8G7zl7wE4sY/lWA2aNc1zA1OXRnJldVmvJvyYuCI0sFYwqGUxmowe8xaHYiV1Wa8m/JC4IjWIcqjF4brOfL2DNp4MAc9NEfWHCjFN6GoLp8em3Buo4Rjk0Y4zCP4TFFQOu+3OPdPRRxwTKBZ4l4H6Y9fXZceY/lIl7IeAPbBX8dQlEtRHMH7VYHk0zGiWSkgXEd1lWI5IcP60QD58+CGvO2BoWr0Ho23DAVEYzeM6gDF+FdipgaonOO/o0oOoNzTHvPAyTzGG6Xg3UnEJngjIN3Seg8QXBONcX3igINbBU8HSryAzNMThk6FyvFAYYHKqzvcplDblBXgpryheA119z0wT44JK2Eb4AdO6AzpPdxmIE88SzG1I8onuaN0D+LhglShDRvkqVc1lAV/OjDaLXh3BfL7LIjixM/bWjMwKbJn/6jTXlCCF79FuQNaCngh3Riq4crFOtDjI/F1ISmMHKcDnNcEnXroEONZAdtGLZHbpTxBiqCc4GMCpSLM9mAbIIOW7f4ygW5iKY8sSk4u6B6py5mczq38vN77SXI7kO4Axqk1PyyGx7EbWLp9J1DBK+4UTYE08d1Gdqf4rXiE4NiY1GmyPOeh1S+PA3oBKhBhYimfFVw3qSWBjuStqVh5Bl04meBdBvlbosUXR1Q85NPYB8pML7ISbX0qNEaRr+KZR3rgu+rQypnSkPsyKYyxCKEfULDQ9jwgJ4TBzY15ElEQ74imFh8s6EfkqtoWHFFgdp1EMuG5ZZuFY5TFLo5LuX/liy92qPQnvbHiNrdzNah9SqWGbI6CzXlt5FlKF1IazxQbis1e7bx94L/UfaCd5294F1nL3i3Af4A0nvY2GiVIa4AAAAASUVORK5CYII=" InformativeScreenshot="1bdf1986be25f536b7561d02011029ce.png" ScopeSelectorArgument="&lt;wnd app='vivaldi.exe' cls='Chrome_WidgetWin_1' title='Rpa Challenge - Vivaldi' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.PointOffset>
+                                    <uix:PointOffset Position="BottomRight" X="-29" Y="25" />
+                                  </uix:TargetAnchorable.PointOffset>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="354,170" sap2010:WorkflowViewState.IdRef="SendHotkey_6" Key="esc" KeyModifiers="None" SpecialKey="True">
+                              <ui:SendHotkey.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="f709783a-ba5d-4a3c-8e6e-1fe93e80a9b2">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:SendHotkey.Target>
+                            </ui:SendHotkey>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'vivaldi.exe Rpa'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="354,251" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="5e4a9a98-c5fe-4212-9578-0215b8b3a44f" Text="[rowEmail]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="592, 302, 44, 20" DesignTimeScaleFactor="1" Guid="8caeaeed-e8f6-40d2-823f-7fcf5df6d26f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACwAAAAUCAYAAAD2rd/BAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGYSURBVEhL7ZVxa4JAGIf3/T+EFJMFuRlthnIxEHZw/yTJokYxIYjJWjbBIHAYv93pLVwrWpvCBj7wyh2v3D1393qe4Z9RCZdNJXwKyZtsnMCOcITZcIRRLryXWOaKJXkwodQIPN4OnTbaTpgljrAjPIapNNDuEhAZdBLJXMFsQkynmWTANGgsSNvH2CNs8udX/D6BOwsxogSmZcJmHsINT7x6YLYB44YvbhggyV5PSZYj0HThNtgkQDihIH0/S67GoHTMz7Qk4bGl8CPUcTuZI3rmk12rUDsExpVYSIBg5sBQFejyaONHArXWAOlNMV/O4HY1qGodiiVHXzBoTQah+UvhfEm4kPuRCuu9XJ2tHOiKCvok+wJRly2H71oEp6XAuF/LhCDGoMMXXbywAXfFp0xjvT1iIWx+2nrxrga2kF3BVmJPjiPEShA+XBLfF/ZBL3Z2n+PfqX9VmMvRBpRLBl/etcnShXFeSknwQXPxMdCpwuLaGlhculZPP7Z604ZjF14SJbCJEf/gj3aI8oULphIum0q4XIB3nFlMS9b9e24AAAAASUVORK5CYII=" InformativeScreenshot="965103009135aeec0d28ffb4b7ad42cf.png" ScopeSelectorArgument="&lt;wnd app='vivaldi.exe' cls='Chrome_WidgetWin_1' title='Rpa Challenge - Vivaldi' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.PointOffset>
+                                    <uix:PointOffset Position="BottomRight" X="-18" Y="30" />
+                                  </uix:TargetAnchorable.PointOffset>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="354,170" sap2010:WorkflowViewState.IdRef="SendHotkey_7" Key="esc" KeyModifiers="None" SpecialKey="True">
+                              <ui:SendHotkey.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="f709783a-ba5d-4a3c-8e6e-1fe93e80a9b2">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:SendHotkey.Target>
+                            </ui:SendHotkey>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'vivaldi.exe Rpa'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="354,251" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="5e4a9a98-c5fe-4212-9578-0215b8b3a44f" Text="[rowPhoneNumber]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="590, 214, 96, 21" DesignTimeScaleFactor="1" Guid="def55060-1624-4f54-9a8f-2c8eb251a4f4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAAAVCAYAAAC5d+tKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQGSURBVGhD7VZta9tmFN3//xHCIiKmVevi2UVBxkFQMUGomFNjFZeYiYiZaFWWTB4Gh5izc6VHtuTGbkKaah90QEbW1X3uy7kv+gUNakVDQM1oCKgZDQE1oyGgZuwhIEU0CRCoK7xaYrVWIszgHDv8rRmrGLMvMZbqb44V4osA0T/q7w/Fy8S9h4ApLK2N7sCGLVfPhH5sY7YqZBZ/a8ZXD6amoePfqAeCBN5rDdaLOPcycR8goGossCTYlHe5LPh7Bs/po9+z4U4S3Oev5bhLMPWcnDzHw/R6K53/bmN0mSBwber2YbsBkjslFKxThB+V7sBFUNKtQAg4NmEaHfi36lmZgMUU7mCEeS7IMR/R3pT9TYic9/GlD+fEgkVbI3Y62FPxuQuLvlmOj3AhLwtUThib+C7+Od606juRhjxPFW4lLxV7PiL1+EkEmGdSbSLToL0dYnqVIv7iomuUKnEdslU1tBl8dB0zmTbaLQP2RdY+mJ5Qt9XBkOMjvaJTvxrQ3vnItROcvSl0i7O3uhUIAa89RJ/60HpjNYpKBGQdslOxUwsadRK5F3lLg/GeybhOEJ2Lnybsky66kqhFjOmpCc0YIszGr8RNwt914EwiJFch/EEbGsdSLqf1M77/igUWJZvYjMGMg5EQe0cG2m8seOdRXgTEAQLEUL4DRm4XRquPcRZlLttWHSevJIFJlENTv1NKSI5lSS4EdD6WxsZqjL6cJ5V2YZPYggwFSZrSrUARkNDSuKeh/0ksPpGAoyFmm90GhKd65vuW7hjeKx3DP+Re4uZ9ZQncwH9bTIYZbBZWOS9YU0eeSWwZ4fSnZE/wiB3gwp+EiDdeiWx/YJJg08tC3KKUDJFXZ7ScZ8L7yvR5rKCWDuOYlVNcBpPS4v5Rb2+wIYBYksSsQJ5IQHGvkNk/qWiU/H0gbkJ09NNQ2dO4K0u+89LZZbY4/4A9waNH0BaHCZh/oOEPlckL/OnSGTebx4cIyDqpN8LNIkVavv7dP4KKgLIu67lwDhHw+bkE7FQ4MRvqecFlndzH6HbH94X6gvxZBGDuon1ER4rleTeHx7ledMUhArIgOIe9udLlQg4sdoRU2C6+CSgfRRqrMD8/gsPusSZqeK05TujH8wjgzhgESNUYuZ/zDPFXfOfgGr9nnL/NN4s3nVjQix3y0wgg0gsnW3B6Nj5YIc5s4/RBAojlpYcul7jO5WvoOtpckvHO3MzwUEC3Pjq0W5y/vHTR0Zl0Lj9dN+EMu88kwMLZZxsm/TKO5GOCZ16UttMygicfFTp9Z+x6uw//LyV7GgE/BverB0bHY0HdPR+g/wusVge8W6+w2vk83YcXJaDB99EQUDMaAmpGQ0DNaAioGQ0BtQL4D/fxVMgUXTdXAAAAAElFTkSuQmCC" InformativeScreenshot="ab3891508a0b74b24a39139a1afece26.png" ScopeSelectorArgument="&lt;wnd app='vivaldi.exe' cls='Chrome_WidgetWin_1' title='Rpa Challenge - Vivaldi' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.PointOffset>
+                                    <uix:PointOffset Position="BottomLeft" X="29" Y="27" />
+                                  </uix:TargetAnchorable.PointOffset>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="354,170" sap2010:WorkflowViewState.IdRef="SendHotkey_8" Key="esc" KeyModifiers="None" SpecialKey="True">
+                              <ui:SendHotkey.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="f709783a-ba5d-4a3c-8e6e-1fe93e80a9b2">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:SendHotkey.Target>
+                            </ui:SendHotkey>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'vivaldi.exe Rpa'" sap:VirtualizedContainerService.HintSize="354,183" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5e4a9a98-c5fe-4212-9578-0215b8b3a44f" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="607, 480, 75, 27" DesignTimeScaleFactor="1" Guid="7862cd9e-5825-4f73-b3b7-8cb89b4cf9e3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAAbCAYAAAA0wHIdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALJSURBVGhD7Ve/SytBEM6/4p/w/gVLK+vXWgVL08kjjdc8LIRYCIqkMfDAFEJEkEhAUEHIKywCD0EQRBECIgiBcNz4zd7s3dzlx8tGi0N34MPs3Mzuzrczs2spWi6Rx2zwZDnAk+UAT5YDPFkO8GQ5wJPlAE+WAzxZDpiBrAWK/hwQ3faI7v8SdTYoqujvixSd4HsdfzN+QG0jtk90KxjDNoNtin5hjRE/6KtKl0ewHvvXrE7mtuP6tsw/Bocr6TwO+A9ZiyDphYw8M1l3RCF+D/E7sDZrRG/Q3awpP0EbdgQkuj2eiajPcwnYlwZE7aWcH6S3nuoyWCD6Bx+WttXJ3HZ8epmuwaaDp3R8NWne6ZhO1tZxvIGOCiRoxrokkDnISgJkSOAhstbqLFmsK2tbQRXZYWUSWQr0AP3D3ojeFdPJ2j/DKsis+phvCT5KFpC3M2MQyBlxoQ7Kooss4QxnKQxZVWyAN9UHabUf420+SlZlFfNDd6+CsX7XIGVwmeoZ5U20Af6MMmMpDFmMBkrR9BXIEFnWQxlmiJuDrLw8HoCEMX5lNGk+rJa6AM7RN5lAk/WQQpFlESADOtigIQ71cWpvvznIuviJfig4BPnsr4PRfj2s9XIs33Dj8X3TxW1WaLISyIafmzL+hJ5le+O+jLWfuVBAWAO/W2j4IfT8pCgcWS30Bb5yeaNKbxZPThvPi0eMuZSUjbnlbhHk25nSTQhoVwI/knGGZMyDyqM73IC8jr2FC0eWbaavII37VBmlxwSyXKuH3RFOnE//Bg/J37Dhku1yhNDp95MNSJfhLvpSH3ZD9UzIZ2RD1iQcnH10FrIMd3Cir/E+jIRMymbODg34hLNQbFhClFVnNWcnAeWlD6J2VBMfKd8llD1UOuBi9yxkVjDp+aBQQSZl/h36OpijwX9feLIc4MlygCfLAZ4sB3iyZkaJ3gEkZsaav8IDKAAAAABJRU5ErkJggg==" InformativeScreenshot="ded567cc07e8f16c50af325c27206957.png" ScopeSelectorArgument="&lt;wnd app='vivaldi.exe' cls='Chrome_WidgetWin_1' title='Rpa Challenge - Vivaldi' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NApplicationCard.Body>
+                      <uix:NApplicationCard.TargetApp>
+                        <uix:TargetApp Area="-8, -8, 1936, 1096" ContentHash="wA763uXAWU6voea1oCZW4g" FilePath="C:\Users\Faraan\AppData\Local\Vivaldi\Application\vivaldi.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM9SURBVFhHtVfJThtBFOQT/C8xGI5wh3vggnJhOSGBOCP+InCxxAHu8AEWVyCEJITgJWaJMcR4ZQ+JOlXjaaun5/V42EoqYWa6u6pfV/fM9CilAqwPDCTAcTANZkD1QnIMjsUxE7Ze4B80mAEboDTQa5Bjz5iapjhdSp3egumAAVzgzKWGb0mvEnrNY5W9Mj+v6hsb6uHsDH2D4LUG7l1OT4t9BVIzQQMMh9SgwyqEJVEXbrPZuEbGu649Z/VcNNbWxDENpmnAvdVeIK7Rwhji2G1maEC68SriGvXlZVkDFA0wbK+NqiMTogEzcDeHWXUwMaFKS0v+lWgwgMW5OY93+K1xs7MT0iFDBmqLi36XNnIYaCuZVFvvkmr//ah/1Q0K76H9F/AYv01UpqYCWmTIQCuT8Zu3kZttG9gGd8DL9XX/jowjiFJcMlBbXVVVSy9k4O/Vld+8jRZKt43ZU5zcGxwMtTFRgchXtPsGXqOviXssyUlfX0AvZEBCATOh+CcY2QXPI/JAUYqfWLPXOMS9Sn+/bICnlwSGchcdP5MwwL+uk7GKCnzH/T+O+zRwZFQhlgHi/OOSJ6wDVsDOsPEPS5MbHlaViAple3tVDrzwqxBrCQiu+wEGpzjXmMyPjqo6QsktxpkfIh95tKERF/IQL4BFUDQQFTCKaXGu8z7IcmsegI2IXfKAEFL8p89yKhU2cGVtQxtFlF4S/gGeCMtiookqaXFW4BhZCBmoWweRDZbbFNbiDNette1s/Bob84QZQorLBkBXgjVKCwsB4WwS5cS1KNzBHIW1OM+DU5eBWpeHEQ3mEDiKk/mhIfXYxfT55GRHWIs7DZB8jkeBWSmOjKgCxK+75KaBx7E5a82SH0LxhYSnVVSiNaK2HHGNidjCBjdpwPlKxo5xTLjQwiuZINohKrBCA86XUj65eHKVcK53W2MT9wjcBdZcEjV5lkp9oIHI13I08o5OsgwjzIZk5rFc9sodR9hnE+MnYn2YcO/yBDNPMb2f7W0Vlyj/LLVjfZr9RiBNYfMweaqwzxWt2zHgm3B+nFLIFn6GeBP0Zq4ZMEBCzP489wwxkBR+4qwpuMm0M3AYx/o8Vz3/Adr+yF7zZZHfAAAAAElFTkSuQmCC" InformativeScreenshot="656524c2ef1b405d810ac2c8db2d57e7.png" Reference="BiLd4UAupkWA8x_YrQx9vQ/q32kEVDgJkSsQGLsnEzYIw" Selector="&lt;wnd app='vivaldi.exe' cls='Chrome_WidgetWin_1' title='Rpa Challenge - Vivaldi' /&gt;" Title="Rpa Challenge - Vivaldi" />
+                      </uix:NApplicationCard.TargetApp>
+                    </uix:NApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </ui:ExcelApplicationScope.Body>
+    </ui:ExcelApplicationScope>
+  </Sequence>
+</Activity>

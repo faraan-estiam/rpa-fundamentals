@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Button 'DOWNLOAD EXCEL'",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "DM1yJxJTEk2cs4hRs-95sg",
+  "Reference": "BiLd4UAupkWA8x_YrQx9vQ/DM1yJxJTEk2cs4hRs-95sg",
+  "ParentRef": "BiLd4UAupkWA8x_YrQx9vQ/q32kEVDgJkSsQGLsnEzYIw",
+  "Created": "2024-08-22T15:14:20.4186064Z",
+  "Updated": "2024-08-22T15:14:20.4186064Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

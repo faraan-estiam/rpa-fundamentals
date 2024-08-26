@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click 'Enregistrer'",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "IIYEZpFiT0GPp57utxKUdg",
+  "Reference": "BiLd4UAupkWA8x_YrQx9vQ/IIYEZpFiT0GPp57utxKUdg",
+  "ParentRef": "BiLd4UAupkWA8x_YrQx9vQ/q32kEVDgJkSsQGLsnEzYIw",
+  "Created": "2024-08-22T15:17:57.4875172Z",
+  "Updated": "2024-08-22T15:17:57.4875172Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

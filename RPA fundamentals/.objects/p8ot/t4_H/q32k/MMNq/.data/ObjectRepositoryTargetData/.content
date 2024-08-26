@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9YEuhRoR50yOwlGruyU30w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="21ffc053-faa3-4e7a-9e75-56f73acb9cbe" CvElementArea="588, 334, 410, 36" CvType="InputBox" DesignTimeRectangle="589, 247, 409, 34" DesignTimeScaleFactor="1" ElementType="InputBox" Guid="68829b8d-d664-42ed-9248-5acb596feaf5" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='vivaldi.exe' cls='Chrome_WidgetWin_1' title='Rpa Challenge - Vivaldi' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="21ffc053-faa3-4e7a-9e75-56f73acb9cbe" CvTextArea="594, 305, 65, 12" CvTextArgument="First Name" CvType="Text" DesignTimeRectangle="594, 217, 65, 12" ElementType="Text" Guid="04ad396b-5711-4401-b17f-3500f0988cec" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ef06ea0743bc07b5a141848d1dc1cb71.png" xmlns="">0PKTCgkhxBkG1J0wg-IeFQg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

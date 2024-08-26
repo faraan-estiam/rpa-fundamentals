@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yzag7OELW0iTj_km1HwfWw" Reference="BiLd4UAupkWA8x_YrQx9vQ/IIYEZpFiT0GPp57utxKUdg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="a972afe1-46a8-4c3d-9df3-e25ba393a73c" CvElementArea="757, 251, 105, 33" CvTextArea="779, 262, 63, 14" CvTextArgument="Enregistrer" CvType="Button" DesignTimeRectangle="757, 251, 105, 33" DesignTimeScaleFactor="1" ElementType="Button" Guid="329ff2ba-be25-471c-a563-59094c530fef" ScopeSelectorArgument="&lt;wnd app='vivaldi.exe' cls='Chrome_WidgetWin_1' title='Vivaldi - Vivaldi' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="7b7effdc1800a4e03425da2d150e6d73.png" xmlns="">0d1gosdti8UiuzQHEgEH8vw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="sVIwiV21SUi99T_mrZ60lw" Reference="BiLd4UAupkWA8x_YrQx9vQ/DM1yJxJTEk2cs4hRs-95sg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="948c69c2-2eeb-4ea1-953c-d67defa8b311" CvElementArea="15, 755, 459, 39" CvTextArea="158, 766, 141, 14" CvTextArgument="DOWNLOAD EXCEL" CvType="Button" DesignTimeRectangle="15, 755, 459, 39" DesignTimeScaleFactor="1" ElementType="Button" Guid="8805420a-ee3b-4387-acde-fa457b34f0c2" ScopeSelectorArgument="&lt;wnd app='vivaldi.exe' cls='Chrome_WidgetWin_1' title='Rpa Challenge - Vivaldi' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="04b709bca1e7eac295004832e8b453cf.png" xmlns="">0IQXyRz7EkESFX40udmOGeg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

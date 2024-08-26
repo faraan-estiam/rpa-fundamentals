@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Rpa Challenge - Vivaldi",
+  "Type": "Screen",
+  "Id": "q32kEVDgJkSsQGLsnEzYIw",
+  "Reference": "BiLd4UAupkWA8x_YrQx9vQ/q32kEVDgJkSsQGLsnEzYIw",
+  "ParentRef": "BiLd4UAupkWA8x_YrQx9vQ/t4_Htp1AKEWKgPh7n0GK7A",
+  "Created": "2024-08-22T15:14:20.2535881Z",
+  "Updated": "2024-08-22T15:14:20.2535881Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
